@@ -39,4 +39,4 @@ set FILEPATH=
 FOR /F %%f in ('dir /S /B %FILENAME%') do set FILEPATH=%%f
 
 rem @echo off
-call ../jdk/bin/java  -cp %FILEPATH% -Xms512m -Xmx%memory%  -Djava.awt.headless=true org.eclipse.core.launcher.Main  -application msi.gama.headless.id4 -data "%workDir%" !param! 
+call ..\jdk\bin\java  -cp %FILEPATH% -Xms512m -Xmx%memory%  -Djava.awt.headless=true org.eclipse.core.launcher.Main  -application msi.gama.headless.id4 -data "%workDir%" !param! 
